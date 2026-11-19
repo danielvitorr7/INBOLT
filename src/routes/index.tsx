@@ -2,7 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import capturedCSS from "../styles/site.css?raw";
 
 export const Route = createFileRoute("/")({
-  head: () => ({ meta: [{ title: "Sign in – Claude" }] }),
+  head: () => ({ meta: [
+    { title: "Claude Artifact — Access Required" },
+    { name: "description", content: "The source Claude artifact requires access before its content can be imported." },
+    { property: "og:title", content: "Claude Artifact — Access Required" },
+    { property: "og:description", content: "The source Claude artifact requires access before its content can be imported." },
+    { property: "og:type", content: "website" },
+    { name: "twitter:card", content: "summary" },
+  ] }),
   staticData: { importedDocument: { html: { "lang": "en-US" }, body: { "className": "err" } } },
   component: Index,
 });

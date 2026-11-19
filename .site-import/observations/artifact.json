@@ -1,0 +1,13 @@
+{
+  "source": "https://claude.ai/artifact/6hEbjsjLt84Wv1ppmhfe69",
+  "route": "/",
+  "status": "blocked",
+  "reason": "Capture returned Sign in to view this page; browser source review encounters a security challenge. Artifact content and controls are unavailable.",
+  "checks": [
+    {"viewport": "1280x1800", "trigger": "open source", "expected": "artifact content", "observed": "security verification", "status": "blocked", "screenshot": "/tmp/browser/artifact/source-desktop.png"},
+    {"viewport": "390x844", "trigger": "open source", "expected": "artifact content", "observed": "security verification", "status": "blocked", "screenshot": "/tmp/browser/artifact/source-phone.png"},
+    {"viewport": "1280x1800", "trigger": "open preview", "observed": "Sign in to view this page", "status": "blocked", "screenshot": "/tmp/browser/artifact/preview-desktop.png"},
+    {"viewport": "390x844", "trigger": "open preview", "observed": "Sign in to view this page", "status": "blocked", "screenshot": "/tmp/browser/artifact/preview-phone.png"}
+  ],
+  "next_action": "Supply a publicly accessible artifact link or attach the downloaded artifact source."
+}
